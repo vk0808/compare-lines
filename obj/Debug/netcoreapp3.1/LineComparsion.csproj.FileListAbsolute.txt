@@ -1,0 +1,13 @@
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\bin\Debug\netcoreapp3.1\LineComparsion.exe
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\bin\Debug\netcoreapp3.1\LineComparsion.deps.json
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\bin\Debug\netcoreapp3.1\LineComparsion.runtimeconfig.json
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\bin\Debug\netcoreapp3.1\LineComparsion.runtimeconfig.dev.json
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\bin\Debug\netcoreapp3.1\LineComparsion.dll
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\bin\Debug\netcoreapp3.1\LineComparsion.pdb
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\obj\Debug\netcoreapp3.1\LineComparsion.csproj.AssemblyReference.cache
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\obj\Debug\netcoreapp3.1\LineComparsion.AssemblyInfoInputs.cache
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\obj\Debug\netcoreapp3.1\LineComparsion.AssemblyInfo.cs
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\obj\Debug\netcoreapp3.1\LineComparsion.csproj.CoreCompileInputs.cache
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\obj\Debug\netcoreapp3.1\LineComparsion.dll
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\obj\Debug\netcoreapp3.1\LineComparsion.pdb
+C:\Users\vk476\source\repos\LineComparsion\LineComparsion\obj\Debug\netcoreapp3.1\LineComparsion.genruntimeconfig.cache
