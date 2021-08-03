@@ -26,6 +26,7 @@ namespace LineComparsion
             double lineLen_1 = Math.Sqrt(Math.Pow(x12 - x11, 2) + Math.Pow(y12 - y11, 2) * 1.0);
             double lineLen_2 = Math.Sqrt(Math.Pow(x22 - x21, 2) + Math.Pow(y22 - y21, 2) * 1.0);
 
+            /// Print Co-ordinates and length
             Console.WriteLine("Line 1");
             Console.WriteLine("co-ordinates : (" + x11 + ", " + y11 + ")" + " and " + "(" + x12 + ", " + y12 + ")");
             Console.WriteLine("length : " + lineLen_1);
@@ -35,13 +36,18 @@ namespace LineComparsion
             Console.WriteLine("length : " + lineLen_2);
 
 
+            /// Compare lines based on length
             if ( lineLen_1 == lineLen_2 )
             {
                 Console.WriteLine("\nLine1 is equal to Line2");
             }
+            else if (lineLen_1 > lineLen_2)
+            {
+                Console.WriteLine("\nLine1 is greater than Line2");
+            }
             else
             {
-                Console.WriteLine("\nLine1 is not equal to Line2");
+                Console.WriteLine("\nLine1 is less than Line2");
             }
         }
     }
