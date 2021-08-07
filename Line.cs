@@ -15,51 +15,70 @@ namespace LineComparsion
         int x22;
         int y22;
 
-        public Line(int x11, int y11, int x12, int y12, int x21, int y21, int x22, int y22)
+        public void AddLine1(int x1, int y1, int x2, int y2)
         {
-            this.x11 = x11;
-            this.y11 = y11;
-            this.x12 = x12;
-            this.y12 = y12;
-            this.x21 = x21;
-            this.y21 = y21;
-            this.x22 = x22;
-            this.y22 = y22;
+            this.x11 = x1;
+            this.y11 = y1;
+            this.x12 = x2;
+            this.y12 = y2;
         }
 
-        public string getLine1()
+        public void AddLine2(int x1, int y1, int x2, int y2)
         {
-            return "co-ordinates : (" + x11 + ", " + y11 + ")" + " and " + "(" + x12 + ", " + y12 + ")";
+            this.x21 = x1;
+            this.y21 = y1;
+            this.x22 = x2;
+            this.y22 = y2;
         }
 
-        public string getLine2()
+        public string Welcome()
         {
-            return "co-ordinates : (" + x21 + ", " + y21 + ")" + " and " + "(" + x22 + ", " + y22 + ")";
+            return "Welcome to Line Comparsion Computation Program";
+        }
+
+        private string LineCoOrdinates(int x1, int y1, int x2, int y2)
+        {
+            return "(" + x1 + ", " + y1 + ")" + " and " + "(" + x2 + ", " + y2 + ")";
+        }
+
+        public string GetLine1()
+        {
+            return LineCoOrdinates(x11, y11, x12, y12);
+        }
+
+        public string GetLine2()
+        {
+            return LineCoOrdinates(x21, y21, x22, y22);
         }
 
 
-        public double findLength1()
+        private double FindLength(int x1, int y1, int x2, int y2)
         {
-            return (Math.Sqrt(Math.Pow(this.x12 - this.x11, 2) + Math.Pow(this.y12 - this.y11, 2) * 1.0));
+            return (Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) * 1.0));
         }
 
-        public double findLength2()
+        public double GetLength1()
         {
-            return (Math.Sqrt(Math.Pow(this.x22 - this.x21, 2) + Math.Pow(this.y22 - this.y21, 2) * 1.0));
+            return FindLength(x11, y11, x12, y12);
         }
 
-        public string equalTo()
+        public double GetLength2()
         {
-            if(this.findLength1() == this.findLength2())
+            return FindLength(x21, y21, x22, y22);
+        }
+
+        public string EqualTo()
+        {
+            if(this.GetLength1() == this.GetLength2())
             {
                 return "Line 1 is equal to Line 2";
             }
             return "Line 1 is not equal to Line 2";
         }
 
-        public string compareTo()
+        public string CompareTo()
         {
-            if(this.findLength1() > this.findLength2())
+            if(this.GetLength1() > this.GetLength2())
             {
                 return "Line 1 is greater than Line 2";
             }
