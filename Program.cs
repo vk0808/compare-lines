@@ -16,39 +16,31 @@ namespace LineComparsion
             int y11 = rand.Next(0, 20);
             int y12 = rand.Next(0, 20);
 
+
             /// Line 2 co-ordinates
             int x21 = rand.Next(0, 20);
             int x22 = rand.Next(0, 20);
             int y21 = rand.Next(0, 20);
             int y22 = rand.Next(0, 20);
 
+            Line line = new Line(x11, y11, x12, y12, x21, y21, x22, y22);
+
             /// Calculate length
-            double lineLen_1 = Math.Sqrt(Math.Pow(x12 - x11, 2) + Math.Pow(y12 - y11, 2) * 1.0);
-            double lineLen_2 = Math.Sqrt(Math.Pow(x22 - x21, 2) + Math.Pow(y22 - y21, 2) * 1.0);
+            double lineLen_1 = line.findLength1();
+            double lineLen_2 = line.findLength2();
 
             /// Print Co-ordinates and length
             Console.WriteLine("Line 1");
-            Console.WriteLine("co-ordinates : (" + x11 + ", " + y11 + ")" + " and " + "(" + x12 + ", " + y12 + ")");
+            Console.WriteLine(line.getLine1());
             Console.WriteLine("length : " + lineLen_1);
 
             Console.WriteLine("\nLine 2");
-            Console.WriteLine("co-ordinates : (" + x21 + ", " + y21 + ")" + " and " + "(" + x22 + ", " + y22 + ")");
+            Console.WriteLine(line.getLine2());
             Console.WriteLine("length : " + lineLen_2);
 
 
             /// Compare lines based on length
-            if ( lineLen_1 == lineLen_2 )
-            {
-                Console.WriteLine("\nLine1 is equal to Line2");
-            }
-            else if (lineLen_1 > lineLen_2)
-            {
-                Console.WriteLine("\nLine1 is greater than Line2");
-            }
-            else
-            {
-                Console.WriteLine("\nLine1 is less than Line2");
-            }
+            Console.WriteLine("\n" + line.compareTo());
         }
     }
 }
